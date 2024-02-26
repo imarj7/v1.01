@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="building.css">
+  <link rel="shortcut icon" href="dtulogo.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+  <h1 id="constructionHeader"></h1>
+  <p id="constructionText"></p>
+  <div id="countdown"></div>
+</div>
+
+<script>
+
+  function typeWriter(text, targetElement, delay) {
+    let charIndex = 0;
+    const typeInterval = setInterval(() => {
+      if (charIndex < text.length) {
+        document.getElementById(targetElement).innerHTML += text.charAt(charIndex);
+        charIndex++;
+      } else {
+        clearInterval(typeInterval);
+      }
+    }, delay);
+  }
+
+
+  typeWriter("Site Under Construction", "constructionHeader", 80); 
+  setTimeout(() => {
+    typeWriter("We're currently working on the site. Stay tuned for updates!", "constructionText", 50); 
+  }, 2000); 
+</script>
+</body>
+</html>

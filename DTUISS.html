@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DTUISS</title>
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="DTUISS.css">
+  <script src="main.js"></script>
+  <link rel="shortcut icon" href="dtulogo.png" type="image/x-icon">
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="homecontainer">
+    <div class="dashboard2">
+        <a href="building.html" class="dashboardbtn" target="_blank">Student Dashboard</a>
+        <a href="building.html" class="dashboardbtn" target="_blank">Office Dashboard</a>
+    </div>
+    <nav style="transition: background-color 0.3s ease-in-out;">
+      <div class="container3 navcontainer">
+        <a href="index.html" class="logocontainer"> 
+          <img src="dtulogo.png" alt="dtulogo" class="logo">
+          <div class="text">
+            <h4>Office of International Affairs</h4>
+            <p>Delhi Technological University</p>
+          </div>
+        </a>
+        <ul class="nav_menu" style="right: -100%;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="DTUISS.html">DTU ISS</a></li>
+            <li><a href="Admission.html">Admission</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <svg width="30" height="30" viewBox="0 0 24 24">
+            <path fill="white" d="M3 18h18v-2H3v2zM3 13h18v-2H3v2zM3 6v2h18V6H3z"></path>
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <!-- noticeboard -->
+    <div class="notice-board">
+      <h2>Notice Board</h2>
+      <ul>
+        <li>
+          <a href="http://dtu.ac.in/Web/notice/2024/feb/file0204.pdf" target="_blank" rel="noopener noreferrer">Notice: Roll numbers of international students whose branch were upgraded</a>
+        </li>
+        <li>
+          <a href="#notice3">Notice: Call for USIP Intern at Office of International Affairs-DTU.</a>
+        </li>
+        <li>
+          <a href="#notice3">Notice: Distribution of Identity card for 2K22 batch.</a>
+        </li>
+      </ul>
+      <button onclick="openModal()" class="see-all-button">
+        See All
+      </button>
+
+      <div id="modal" class="modal">
+        <div class="overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+          <h2 class="h2overlay">All Notices</h2>
+          <table id="noticeTable"></table>
+          <div class="pagination">
+            <button onclick="prevPage()" class="prev-page-button" disabled>Previous</button>
+            <span id="currentPage"></span>
+            <button onclick="nextPage()" class="next-page-button" disabled>Next</button>
+          </div>
+          <button onclick="closeModal()" class="closecheck">Close</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <section class="team">
+        <h1 style=color:var(--color-bg)>
+            International Students' Society
+        </h1>
+        <div class="issgrid">
+            <div class="photoleft">
+                <img src="dtuissleft.jpeg" alt="" />
+            </div>
+            <div class="contentright">
+                <h1>About ISS</h1>
+            <p>The Delhi Technological University's International Students' Society is a dynamic and student-driven organization aimed at fostering a sense of community and camaraderie among the diverse international student body at DTU. Committed to promoting cultural exchange, the society organizes a range of activities such as cultural festivals, food fairs, and performances that showcase the rich diversity of its members. Beyond cultural celebrations, the society plays a crucial role in aiding the transition of new international students by conducting orientation programs, guided tours, and informative sessions on various aspects of student life in Delhi. The organization further supports language exchange initiatives, community outreach, and networking events to enhance the overall experience of international students at DTU. By providing a platform for social interactions, educational seminars, and recreational activities, the International Students' Society contributes significantly to creating a supportive and inclusive environment for students who are far from their home countries.
+                    </p>
+            </div>
+        </div> 
+        <div class="container team__container">
+    
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="Shephard.jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Shephard Simukonda</h4>
+                    <p>President</p>
+                </div>
+               
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="Atul.jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Atul Kumar Chaudhary</h4>
+                    <p>Vice President</p>
+                </div>
+               
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="Ashutosh .jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Ashutosh Bhattarai</h4>
+                    <p>Secretary General</p>
+                </div>
+                
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="Profile Picture.jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Aniket Raj Jha</h4>
+                    <p>Assistant Secretary General</p>
+                </div>
+                
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="ogulhan.jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Ogulhan Kerimova</h4>
+                    <p>Financial Secretary</p>
+                </div>
+                 
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="Samir Kalil Mohammed.jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Samir Kalil Mohammed</h4>
+                    <p>Academics Coordinator</p>
+                </div>
+                 
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="Alphaus.jpg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Alphaus Nkandu</h4>
+                    <p>High Commissions & Embassies Coordinator</p>
+                </div>
+                 
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="Ousman Jeng.jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Ousman Jeng</h4>
+                    <p>Placement Coordinator UG</p>
+                </div>
+                 
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="Nabiyu Samuel.jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Nabiyu Samuel</h4>
+                    <p>Alumni Coordinator</p>
+                </div>
+                 
+            </article>
+            
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="SSENTEZA HUSEIN LATIFU.jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Ssenteza Latifu</h4>
+                    <p>Cultural Coordinator</p>
+                </div>
+                 
+            </article>
+            
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="Mormon James.jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Agbo Mormon James</h4>
+                    <p>Sports Coordinator</p>
+                </div>
+                 
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="Richel Trisha.jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4> Richel Trisha</h4>
+                    <p>Social Welfare Coordinator</p>
+                </div>
+                 
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="tabrej.jpeg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4>Md Shamse Tabrej</h4>
+                    <p>Public Relation Head</p>
+                </div>
+                 
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="Butty Saylee.png" alt=""/>
+                </div>
+                <div class="team__member-info ">
+                    <h4>Butty Saylee</h4>
+                    <p>Technical Activity Coorinator</p>
+                </div>
+                 
+            </article>
+            <article class="team__member">
+                <div class="team__member-image">
+                    <img src="mj.jpg" alt=""/>
+                </div>
+                <div class="team__member-info">
+                    <h4> Muhammed Jamiu Abdulraheem</h4>
+                    <p>Student Magazine & literacy coordinator </p>
+                </div>
+                 
+            </article>
+            
+            
+        </div>
+        
+    </section>
+    <div class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out to us for any inquiries or questions you may have.</p>
+      
+      <div class="contact-info">
+          <p><strong>Email:</strong> dtuiss2021@gmail.com</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer1">
+                <a href="index.html"><h4>Office of International Affairs</h4></a>
+                <p>Delhi Technological University,<br/>
+                Mechanical Department, First Floor<br/>Bawana Road ,110042, New Delhi </p>
+            </div>
+            <div class="footer2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Courses.html">Courses</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <h4>Info</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="Admission.html">How to Apply</a></li>
+                </ul>
+            </div>
+            <div class="footer4">
+                <h4>Contact Us</h4>
+                <div>
+                <p>oia@dtu.ac.in</p>
+                    <p>international.dtu@dtu.ac.in</p>
+                </div>
+            
+            <div class="footer5">
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/profile.php?id=100065103819173&sk=about_contact_and_basic_info"  target='_blank'><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/dtu_delhi" target='_blank'><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/dtu.delhi/" target='_blank'><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/delhi-technological-university-delhi-397129209/" target='_blank'><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+            </div>
+        </div>
+        </div>
+            <div class="footer__copyright">
+                <small>Copyright &copy; Delhi Technological University</small>
+                <p>Designed and Developed by <a href="https://www.linkedin.com/in/aniketrajjha/" target='_blank' class='copyrightname'>Aniket Raj Jha</a></p>
+            </div>
+    </footer>
+
+
+
+    <button onclick="goToTop()" id="goToTopBtn" title="Go to top">&#8679;</button>
+</div>
+
+
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    document.querySelector('.see-all-button').addEventListener('click', openModal);
+
+    const notices = [
+    {
+    text: 'Notice: Roll numbers of international students whose branch were upgraded',
+    link: 'http://dtu.ac.in/Web/notice/2024/feb/file0204.pdf'
+  },
+  {
+    text: 'Notice: Call for USIP Intern at Office of International Affairs-DTU.',
+    link: '#'
+  },
+  {
+    text: 'Notice: Distribution of Identity card for 2K22 batch.',
+    link: '#'
+  },
+  
+];
+
+document.querySelector('.menu-icon').addEventListener('click', function() {
+  var menu = document.querySelector('.nav_menu');
+  var menuStyles = getComputedStyle(menu);
+  var right = menuStyles.getPropertyValue('right');
+  if (right === '0px') {
+    menu.style.right = '-100%';
+  } else {
+    menu.style.right = '0px';
+  }
+});
+
+const noticesPerPage = 3; 
+let currentPage = 1;
+
+function displayNotices() {
+  const noticeTable = document.getElementById("noticeTable");
+  noticeTable.innerHTML = ""; 
+
+  const startIndex = (currentPage - 1) * noticesPerPage;
+  const endIndex = Math.min(startIndex + noticesPerPage, notices.length);
+
+  for (let i = startIndex; i < endIndex; i++) {
+    const notice = notices[i];
+    const row = `<tr><td>${notice.text}</td><td><a href="${notice.link}" target="_blank" rel="noopener noreferrer">view</a></td></tr>`;
+    noticeTable.insertAdjacentHTML("beforeend", row);
+  }
+
+}
+
+function nextPage() {
+  if (currentPage < Math.ceil(notices.length / noticesPerPage)) {
+    currentPage++;
+    displayNotices();
+    updatePaginationButtons();
+  }
+}
+
+function prevPage() {
+  if (currentPage > 1) {
+    currentPage--;
+    displayNotices();
+    updatePaginationButtons();
+  }
+}
+
+function updatePaginationButtons() {
+  const nextButton = document.querySelector(".next-page-button");
+  const prevButton = document.querySelector(".prev-page-button");
+  
+  nextButton.disabled = currentPage >= Math.ceil(notices.length / noticesPerPage);
+  prevButton.disabled = currentPage <= 1;
+}
+
+function openModal() {
+  currentPage = 1;
+  displayNotices();
+  updatePaginationButtons();
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+window.addEventListener('scroll', function() {
+    var nav = document.querySelector('nav');
+    if (window.scrollY > 0) {
+      nav.style.backgroundColor = 'var(--color-bg1)'; 
+    } else {
+      nav.style.backgroundColor = 'transparent'; 
+    }
+  });
+  </script>
+  
+</body>
+</html>

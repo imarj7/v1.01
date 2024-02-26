@@ -1,0 +1,16 @@
+.courses{
+    padding-top: 7rem;
+}
+@media screen and (max-width:768px) {
+    .courses{
+        padding-top: 7rem;
+        margin-top: 1rem;
+    }
+    .coursebtn{
+        font-size: x-small;
+        padding:.45rem;
+    }
+    .course_container{
+        margin: auto;
+    }
+}
